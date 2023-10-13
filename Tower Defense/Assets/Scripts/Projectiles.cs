@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Projectiles : MonoBehaviour
 {
-    [SerializeField] float firing_rate;
-    public GameObject death;
-    public bool move;
+	[SerializeField] int damage = 1; // Adjust the damage value per bullet.
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(this.move){
-            this.transform.Translate(Vector3.up * this.firing_rate * Time.deltaTime);
-        }        
-    }
-    
-    void OnTriggerEnter(Collider collider){
-        if(collider.tag == "zombie"){
-            Destroy(this.gameObject);
+        if (other.CompareTag("Zombie"))
+        {
+            Zombie zombie = other.GetComponent<Zombie>();
+
+            if (zombie != null)
+            {
+                zombie.TakeDamage(damage);
+            }
+
+            Destroy(gameObject);
         }
     }
+
 }

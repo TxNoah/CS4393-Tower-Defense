@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 233041729860755458}
   - component: {fileID: 1367464433514340973}
   - component: {fileID: 4452563727916653859}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,9 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e12acdd958d21f408b44c2ae5f3ae97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firing_rate: 1
-  death: {fileID: 881172475865150553, guid: 54a37c17d649d434da527e71425e9892, type: 3}
-  move: 1
+  damage: 1
 --- !u!212 &233041729860755458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131,7 +129,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.002004549, y: -0.003082782}

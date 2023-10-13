@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8144452945164137552}
   - component: {fileID: 3921284198297673819}
   - component: {fileID: 1217232811013921394}
+  - component: {fileID: 3712065197902517097}
   m_Layer: 0
   m_Name: Tombstone
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 172626504, guid: c4d2ccab0c2ad7e47853b6e31a7ac7c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -106,3 +107,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3712065197902517097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881172475865150553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b266408c03b351429881ed1e4e867b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimum_delay: 1
+  maximum_delay: 5
+  zombiePrefab:
+  - {fileID: 5831378148588242733, guid: 75c0def8d561ae64498e33c9a4e70bfe, type: 3}
+  - {fileID: 6524195563541024475, guid: da712c2f755f70c43899360f05379d45, type: 3}
+  - {fileID: 7442879185155859307, guid: 03cf0163d9a24b04eaa21bb531c19198, type: 3}
+  - {fileID: 2175820264865364338, guid: a818cb64f38837c489a8ed42160038fe, type: 3}
